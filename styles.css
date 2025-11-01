@@ -53,17 +53,22 @@ h1 {
 
 h2 {
     position: absolute;
-    /* color: #003049; */
-    color: white;
+    color: #274C77;
     top: 110%;
-    left: 80%;
+    left: 75%;
 }
 
-p {
+.about.me {
     position: absolute;
-    color: #274C77;
+    color: #8B8C89;
+    background-color: #E7ECEF;
+    height: fit-content;
+    width: fit-content;
     top: 130%;
-    left: 10%;
+    left: 45%;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 footer {
