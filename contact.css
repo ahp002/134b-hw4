@@ -21,12 +21,50 @@ h2 {
 }
 
 .connections {
-    top: 20%;
+    top: 60%;
     position: absolute;
     font-family: var(--secondary-font, sans-serif);
     color: white;
+
+
 }
 
+.github {
+    position: absolute;
+    top: 30%;
+    right: 72%;
+    transition: transform 0.5s ease;
+}
+
+a:hover .github{
+    transform: scale(1.1);
+}
+
+.linkedin {
+    position: absolute;
+    top: 30%;
+    right: 90%;
+    transition: transform 0.5s ease;
+}
+
+a:hover .linkedin{
+    transform: scale(1.1);
+}
+
+
+.email {
+    position: absolute;
+    top: 30%;
+    right: 62%;
+    border-radius: 49%;
+    justify-content: center;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+a:hover .email{
+    transform: scale(1.1);
+}
 
 
 dialog {
