@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #003049; 
+    --secondary-color: #fdf0d5; 
+    --content-color: #8B8C89;
+    --title-color: #274C77;
+    --container-color: #E7ECEF;
+    --primary-font: "Lato", sans-serif;
+    --secondary-font: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+h2 {
+    font-family: var(--primary-font, sans-serif);
+    color: white;
+    position: absolute;
+    top: 20%;
+    right: 65%;
+}
+
+.connections {
+    top: 20%;
+    position: absolute;
+    font-family: var(--secondary-font, sans-serif);
+    color: white;
+}
+
+
+
+dialog {
+    position: absolute;
+    top: 25%;
+    left: 53%;
+    border: none;
+    border-style: inset;
+    font-family: var(--primary-font, sans-serif);
+    background-color: var(--container-color, white);
+}
+
+fieldset {
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    width: fit-content;
+    font-family: var(--primary-font, sans-serif);
+    color: white;
+}
+
+nav {
+    /* background-color: #dbe4ee; */
+    position: absolute;
+    /* height: fit-content; */
+    top: 0.5rem;
+    right: 5%;
+    font-family: var(--primary-font, sans-serif);
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 25px;
+    word-spacing: 3px;
+
+    &:hover {
+        background-color: #ddd;
+        transition: background-color 0.6s ease;
+        color: black;
+    }
+
+    &:link {
+        text-decoration: none;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 99dvw;
+    color: white;
+    font-family: var(--primary-font, sans-serif);
+}
