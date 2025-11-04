@@ -22,9 +22,7 @@ h1 {
 }
 
 nav {
-    /* background-color: #dbe4ee; */
     position: absolute;
-    /* height: fit-content; */
     top: 0.5rem;
     right: 5%;
     font-family: var(--primary-font, sans-serif);
@@ -51,11 +49,6 @@ nav a {
 }
 
 .resume {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* top: 15%;
-    right: 10%; */
     border: 1px solid white;
     border-radius: 4px;
     position: absolute;
