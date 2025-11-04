@@ -12,6 +12,8 @@ html, body {
     --container-color: #E7ECEF;
     --primary-font: "Lato", sans-serif;
     --secondary-font: "Montserrat", sans-serif;
+    --color: color(a98-rgb 0 0 1);
+    --mix-color: color-mix(in oklab, var(--primary-color), white 30%);
 }
 
 
@@ -101,6 +103,7 @@ footer {
     width: 99dvw;
     height: 2rem;
     font-family: var(--primary-font, sans-serif);
+    color: var(--mix-color);
 }
 
 nav {
@@ -136,7 +139,3 @@ nav a {
     background-color: #ddd;
     color: black;
 }
-
-/* @media screen {
-    
-} */

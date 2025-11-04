@@ -6,6 +6,7 @@
     --container-color: #E7ECEF;
     --primary-font: "Lato", sans-serif;
     --secondary-font: "Montserrat", sans-serif;
+    --color: color(a98-rgb 0 0 1);
 }
 
 body {
@@ -66,7 +67,7 @@ nav a {
     font-family: var(--primary-font, sans-serif);
     border-radius: 8px;
     position: absolute;
-    top: 720px;
+    top: 710px;
     left: 45%;
 
     &:hover {
@@ -84,6 +85,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 99dvw;
-    color: var(--title-color);
+    /* color: var(--title-color); */
+    color: var(--color);
     font-family: var(--primary-font, sans-serif);
 }

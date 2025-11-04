@@ -22,11 +22,11 @@ body {
     position: absolute;
     left: 60%;
     top: 20%;
+}
 
-    &:hover {
-        box-shadow: 0 6px 16px 0 white;
-        transform: scale(1.1);
-    }
+.sanrio-card:has(:hover) {
+    box-shadow: 0 6px 16px 0 white;
+    transform: scale(1.02);
 }
 
 .portfolio-card {
@@ -39,11 +39,11 @@ body {
     position: absolute;
     left: 18%;
     top: 20%;
+}
 
-    &:hover {
-        box-shadow: 0 6px 16px 0 white;
-        transform: scale(1.1);
-    }
+.portfolio-card:has(:hover) {
+    box-shadow: 0 6px 16px 0 white;
+    transform: scale(1.02);
 }
 
 h1 {
