@@ -139,3 +139,7 @@ nav a {
     background-color: #ddd;
     color: black;
 }
+
+html {
+    scrollbar-gutter: stable;
+}
