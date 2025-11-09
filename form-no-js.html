@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="form-no-js.css">
+    </head>
+    <body>
+        <main>
+            <form action="https://httpbin.org/post" method="post">
+                <label for="fname">Full Name:</label>
+                <input type="text" id="fname" name="fullname" required placeholder="Your full name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your email">
+
+                <label for="comment">Comments:</label>
+                <textarea id="comment" name="comment" rows="6" cols="30" required placeholder="Write something..."></textarea>
+
+                <input type="hidden" id="possible_bot" name="possible_bot" value="true">
+
+                <label for="submit">Submit</label>
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+    </body>
+</html>
