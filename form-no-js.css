@@ -37,7 +37,11 @@ input[type=submit] {
     }
 }
 
-input:invalid:focus {
+/* input:invalid:focus {
+    border: 2px solid red;
+} */
+
+form.submitted input:invalid {
     border: 2px solid red;
 }
 
@@ -45,3 +49,14 @@ input:invalid:focus {
     color: red;
 }
 
+output {
+    display: none;
+}
+
+output.error {
+    color: red;
+}
+
+output.info {
+    color: gray;
+}
