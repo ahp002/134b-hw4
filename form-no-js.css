@@ -24,7 +24,7 @@ input[type=email], select, textarea {
 
 input[type=submit] {
     display: flex;
-    padding: 5px;
+    padding: 13px;
     border: 2px solid #ccc; 
     border-radius: 100px; 
     box-sizing: border-box; 
@@ -49,14 +49,25 @@ form.submitted input:invalid {
     color: red;
 }
 
-output {
+/* output {
     display: none;
 }
 
 output.error {
     color: red;
+} */
+
+output.name-info {
+    color: gray;
+    font-size: 13px;
 }
 
-output.info {
+output.email-info {
     color: gray;
+    font-size: 13px;
+}
+
+output.comment-info {
+    color: gray;
+    font-size: 13px;
 }
