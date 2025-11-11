@@ -1,4 +1,4 @@
-input[type=text], select, textarea {
+input[type=text], input[type=email], select, textarea {
     display: flex;
     flex-direction: column;
     width: 20%;
@@ -9,18 +9,6 @@ input[type=text], select, textarea {
     box-sizing: border-box;
     margin-top: 6px;
     /* space between each field */
-    margin-bottom: 16px;
-}
-
-input[type=email], select, textarea {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    padding: 12px;
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
     margin-bottom: 16px;
 }
 
@@ -51,6 +39,8 @@ input[type=submit] {
 output.error {
     color: red;
 } */
+
+
 
 output.name-info, output.email-info, output.comment-info {
     display: flex;
