@@ -38,8 +38,10 @@ input[type=submit] {
     color: red;
     font-size: 13px;
     transition: opacity 1s ease;
-    margin-top: -10px;
-    margin-bottom: 15px;
+    height: 12px;
+    /* space between error msg and field */
+    margin-top: -12px;
+    margin-bottom: 4px;
 }
 
 .error.show {
