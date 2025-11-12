@@ -50,6 +50,7 @@ input[type=submit] {
 
 input.flash {
     background-color: #ffcccc;
+    border: 2px solid red;
     transition: background-color 0.3s ease;
 }
 
