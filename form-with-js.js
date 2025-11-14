@@ -69,10 +69,25 @@ nameError(nameIn);
 emailError(emailIn);
 commentError(commentIn);
 
-
-
 form.addEventListener("submit", (e) => {
     if (!form.checkValidity()) {
         e.preventDefault();
+    }
+});
+
+const maxLength = 1000;
+const counter = document.getElementById("char-count");
+const textArea = document.getElementById("comment");
+const wholeCounter = document.getElementById("counter");
+
+textArea.addEventListener("input", function() {
+    const inputVal = this.value;
+    const count = inputVal.length;
+    const remaining = maxLength - count;
+    counter.textContent = `${count}`;
+    if (remaining <= 10) {
+        wholeCounter.style.color = "red";
+    } else {
+        wholeCounter.style.color = "gray";
     }
 });

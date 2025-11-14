@@ -63,3 +63,9 @@ output.info {
     /* space between info and next field */
     margin-bottom: 20px;
 }
+
+.counter {
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+}
