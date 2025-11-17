@@ -1,7 +1,7 @@
 const allowedChars1 = /^[A-Za-z\s]*$/;
 const formErr = document.getElementById("form-errors");
 const form_err = [];
-function showError(input, message, show = false) {
+function showError(input, message, hide = false) {
     const errOut = document.getElementById(input.id + "-error");
     errOut.textContent = message;
     errOut.classList.add("show");  
@@ -13,6 +13,9 @@ function showError(input, message, show = false) {
         value: input.value
     });
 
+    if (hide == false) {
+        return;
+    }
 
     setTimeout(() => {
         errOut.classList.remove("show");
@@ -41,9 +44,11 @@ const commentIn = document.getElementById("comment");
 function nameError(n) {
     n.addEventListener("input", () => {
         if (n.validity.valueMissing) {
-            showError(nameIn, "Name cannot be blank.");
+            n.setCustomValidity("Name cannot be blank.");
+            showError(nameIn, "Name cannot be blank.", false);
         } else if (n.validity.tooShort) {
-            showError(nameIn, "Name must be at least 4 characters.");
+            n.setCustomValidity("Name must be at least 4 characters.");
+            showError(nameIn, "Name must be at least 4 characters.", false);
         } else {
             n.setCustomValidity("");
         }
