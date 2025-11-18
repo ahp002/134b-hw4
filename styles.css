@@ -141,6 +141,7 @@ nav a {
 
 #mode {
     position: absolute;
-    top: 0.5rem;
-    right: 5%;
+    top: 1rem;
+    right: 1%;
+    font-size: 20px;
 }
